@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -24,11 +24,73 @@
         </ul>
     </header>
 
-    <main class="container"></main>
+    <main class="container">
+        <div class="container">
                 <h2 class="container">Registration List</h2>
+                <p id="numberOfPets" class="alert alert-dark"> Display the Number of Pets</p>
+                <div>
+                    <div>
+                        <label class="form-label">Name:</label>
+                        <input class="form-control"  type="text" placeholder="Enter Pet's Name" id="txtName">
+                    </div>
+                </div>
+                <div>
+                    <label> Age:</label>
+                    <input class="form-control"  type="number" id="txtAge">    
+                </div>
+                <div>
+                    <label>Gender:</label>
+                    <input class="form-control"  type="text" id="txtGender">
+                </div>
+                <div>
+                    <label>Breed:</label>
+                    <input class="form-control"  type="text" id="txtBreed">
+                </div>
+                <div>
+                    <label>Service:</label>
+                    <select class="form-select" id="txtService">
+                        <option value="" disabled selected> ---Select an option---</option>
+                        <option value="grooming"> Grooming 0🚿</option>
+                        <option value="vaccine">Vaccine💉</option>
+                        <option value="Nails"> Nails 💅</option>
+                    </select>
+                </div>
+                <div>
+                    <label> Owner's Name:</label>
+                    <input class="form-control" type="text" id="txtOwner">
+                </div>
+                <div>
+                    <label> Mobile: </label>
+                    <input class="form-control" type="number" id="txtMobile">
+                </div>
+                <br>
+                <button onclick="register()" class="btn btn-primary"> Register</button>
+                
+         </div>
+         <br>
+                <div id="pets">                   
+                </div>
+                <br>
+                <br>
+                <br>       
+                <table class="table table-striped">
+                    <thead>
+                       <tr>
+                         <th scope="col"> Name </th>
+                         <th scope="col"> Age</th>
+                         <th scope="col"> Gender</th>
+                         <th scope="col"> breed </th>
+                         <th scope="col"> Service </th>
+                       </tr>
+                    </thead>
+                    <tbody id="tablePets" >
 
+                    </tbody>
+                </table>
     </main>
+            <script src="display.js"></script>
             <script src="register.js"></script>
+           
         
     </body>
     </html>
