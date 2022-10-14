@@ -1,3 +1,18 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-family: fantasy;
+    color: rgb(83, 131, 163);
+}
+footer{
+    margin-top: auto;
+    background-color: rgb(81, 81, 180);
+    color: aliceblue;
+}
+
 #pets{
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -6,7 +21,9 @@
 }
 
 .pet{
-    background-color: rgb(48, 221, 221);
-    border: 1px solid rgb(29, 156, 156);
+    background-color: rgb(223, 216, 193);
+    border: 1px solid rgb(201, 171, 133);
     padding: 10px;
+    border-radius: 3px;
+    font-weight: 500;
 }
