@@ -9,8 +9,8 @@ h1{
 }
 footer{
     margin-top: auto;
-    background-color: rgb(81, 81, 180);
-    color: aliceblue;
+    background-color: bisque;
+    color: rgb(85, 173, 85);
 }
 
 #pets{
@@ -26,4 +26,13 @@ footer{
     padding: 10px;
     border-radius: 3px;
     font-weight: 500;
+}
+.center-header{
+    text-align: center;
+}
+ul {
+ background-color: bisque;
+}
+a { 
+    color: rgb(85, 173, 85);
 }
