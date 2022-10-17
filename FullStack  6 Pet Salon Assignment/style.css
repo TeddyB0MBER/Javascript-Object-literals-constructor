@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-h1{
+h1, h2 {
     font-family: fantasy;
     color: rgb(83, 131, 163);
 }
@@ -33,6 +33,14 @@ footer{
 ul {
  background-color: bisque;
 }
-a { 
+.link-color { 
     color: rgb(85, 173, 85);
+}
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 25% ;
+}
+img:hover { 
+    border: solid 2px goldenrod;
 }
